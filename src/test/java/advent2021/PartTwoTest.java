@@ -1,4 +1,4 @@
-package day1;
+package advent2021;
 
 import org.junit.jupiter.api.Test;
 

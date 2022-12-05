@@ -1,4 +1,4 @@
-package day1;
+package advent2021;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -7,7 +7,7 @@ import java.util.stream.Stream;
 public class PartOne {
 
     public static void main(String[] args) throws Exception {
-        var lines = Files.lines(Paths.get(ClassLoader.getSystemResource("day1/input.txt").toURI()));
+        var lines = Files.lines(Paths.get(ClassLoader.getSystemResource("advent2021/input.txt").toURI()));
         var solver = new Solver(Integer.MAX_VALUE);
         final var solution = solver.solve(lines.map(Integer::parseInt));
         System.out.printf("Result: %s", solution);

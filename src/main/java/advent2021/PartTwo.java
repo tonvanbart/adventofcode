@@ -1,4 +1,4 @@
-package day1;
+package advent2021;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 public class PartTwo {
 
     public static void main(String[] args) throws Exception {
-        var numbers = Files.lines(Paths.get(ClassLoader.getSystemResource("day1/input.txt").toURI()))
+        var numbers = Files.lines(Paths.get(ClassLoader.getSystemResource("advent2021/input.txt").toURI()))
                 .map(Integer::parseInt)
                 .collect(Collectors.toList());
         final var windows = IntStream.range(0, numbers.size() - 2)
