@@ -1,4 +1,4 @@
-package day3;
+package advent2021.day3;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

@@ -2,13 +2,8 @@ package advent2022;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Day3 {
 
@@ -23,7 +18,6 @@ public class Day3 {
         System.out.println("lines.size() = " + lines.size());
         var totalscore = 0;
         var processed = 0;
-//        System.out.println("intersect(\"ABCDEF\", \"CDEFGH\") = " + intersect("ABCDEF", "CDEFGH"));
         for (var line: lines) {
             var left = line.substring(0, line.length()/2);
             var right = line.substring(line.length()/2);
